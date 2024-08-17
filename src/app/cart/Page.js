@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 
 let tax = 10;
 let delevary_charge = 100;
-const page = () => {
+const Page = () => {
   const router = useRouter();
   const user =localStorage.getItem("User") && JSON.parse(localStorage.getItem("User"));
   const [cartList, setCartList] = useState();
@@ -134,4 +134,4 @@ setCartList(localStorage.getItem("NewCart")&& JSON.parse(localStorage.getItem("N
   );
 };
 
-export default page;
+export default Page;
