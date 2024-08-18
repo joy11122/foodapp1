@@ -5,7 +5,7 @@ import SignUp from "@/component/SignUp";
 import Link from "next/link";
 import React, { useState } from "react";
 
-const page = () => {
+const Page = () => {
   const [login, setLogin] = useState(true);
   return (
     <div className="mt-5">
@@ -26,4 +26,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

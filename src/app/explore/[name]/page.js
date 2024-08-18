@@ -2,7 +2,7 @@
 import Navbar from "@/component/Navbar";
 import React, { useEffect, useState } from "react";
 
-const page = ({ params }) => {
+const Page = ({ params }) => {
   const [resto, setResto] = useState([]);
   const [food, setFood] = useState([]);
   const [removeCart, setRemoveCart] = useState();
@@ -90,4 +90,4 @@ return item.name.toUpperCase();
   );
 };
 
-export default page;
+export default Page;

@@ -4,7 +4,7 @@ import FoodList from '@/component/FoodList'
 import RestoNavbar from '@/component/RestoNavbar'
 import React, { useState } from 'react'
 
-const page = () => {
+const Page = () => {
 const [toggle,setToggle]=useState(false)
     return (
         <div>
@@ -21,4 +21,4 @@ const [toggle,setToggle]=useState(false)
     )
 }
 
-export default page
+export default Page

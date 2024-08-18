@@ -1,6 +1,6 @@
 import React from 'react'
 import UserLogin from "@/component/UserLogin";
-const page = () => {
+const Page = () => {
     return (
         <div>
     <UserLogin/>
@@ -8,4 +8,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

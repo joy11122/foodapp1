@@ -4,7 +4,7 @@ import Navbar from "@/component/Navbar";
 import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
-const page = () => {
+const Page = () => {
   const [profileData, setProfileData] = useState([]);
   const router = useRouter();
   let user_id =
@@ -71,4 +71,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

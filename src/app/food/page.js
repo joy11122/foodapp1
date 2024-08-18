@@ -1,6 +1,6 @@
 import Card from '@/component/Card'
 import React from 'react'
-const page = () => {
+const Page = () => {
     return (
         <div>
             <Card/>
@@ -8,4 +8,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

@@ -3,7 +3,7 @@ import RestoNavbar from '@/component/RestoNavbar'
 import RestoProfile from '@/component/RestoProfile'
 import React from 'react'
 
-const page = () => {
+const Page = () => {
     return (
         <div>
             <RestoNavbar/>
@@ -12,4 +12,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

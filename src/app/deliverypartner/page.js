@@ -5,7 +5,7 @@ import DeliveryPartnerSignUp from "@/component/DeliveryPartnerSignUp"
 import Link from 'next/link'
 import Navbar from '@/component/Navbar'
 import DeliveryNavbar from '@/component/DeliveryNavbar'
-const page = () => {
+const Page = () => {
 
     const [toggle,setToggle]=useState(false)
     return (
@@ -20,4 +20,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

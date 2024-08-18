@@ -5,7 +5,7 @@ import UserLogin from "@/component/UserLogin";
 import Link from "next/link";
 import Navbar from "@/component/Navbar";
 
-const page = (props) => {
+const Page = (props) => {
   const [toggle, setToggle] = useState(false);
   return (
     <div>
@@ -24,4 +24,4 @@ const page = (props) => {
   );
 };
 
-export default page;
+export default Page;

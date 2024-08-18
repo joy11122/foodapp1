@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React from "react";
 
-const page = () => {
+const Page = () => {
   const user =localStorage.getItem("User")&& JSON.parse(localStorage.getItem("User"));
   const Cart = localStorage.getItem("NewCart") &&JSON.parse(localStorage.getItem("NewCart"));
   let totalPriceList = Cart?.map((item) => {
@@ -122,4 +122,4 @@ router.push("/profile")
   
   );
 };
-export default page;
+export default Page;

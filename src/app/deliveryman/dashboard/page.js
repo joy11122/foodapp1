@@ -3,7 +3,7 @@ import DeliveryNavbar from "@/component/DeliveryNavbar";
 import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
-const page = () => {
+const Page = () => {
   const [data,setData]=useState([])
   const router = useRouter();
   const [deliverymanData, setDeliverymanData] = useState([]);
@@ -92,4 +92,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
