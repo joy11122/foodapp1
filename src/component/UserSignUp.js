@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import UserLogin from "@/component/UserLogin"
-const user_auth = (props) => {
+const User_auth = (props) => {
  
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -140,4 +140,4 @@ const user_auth = (props) => {
   );
 };
 
-export default user_auth;
+export default User_auth;
