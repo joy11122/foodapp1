@@ -1,0 +1,138 @@
+*{outline:none;
+    margin:0;padding:0;box-sizing:border-box;
+    list-style:none;
+}
+body{
+    background-color:#09003f;
+    color:white;
+}
+.left-content,.right-content{
+   width:50%;
+}
+nav h4{
+   color:crimson;
+   
+}
+.coverimg{
+background: linear-gradient(130deg,rgb(87, 3, 3),rgb(6, 36, 6),rgb(21, 138, 56));
+width:100%;
+height:70vh;
+background-repeat:no-repeat;
+background-size:cover;
+background-position:center;
+background-color: rgba(2, 10, 19, 0.185);
+position: relative;
+}
+.coverimg h1{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    position: absolute;
+}
+
+.i> ::placeholder{
+
+color:red;
+padding-left:10px;
+}
+.b{
+border-right:3px solid black;
+
+}
+.b select{
+background-color:transparent;
+}
+.content button{
+width:20px;
+height:20px;
+Background-color:blue;
+border-radius:50%;
+}
+footer .gallery{
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-gap:10px;
+
+}
+nav>input{
+display:none;
+}
+nav >label{
+display:none;
+}
+.resturent-card{
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-gap:10px;
+width:100%;
+cursor:pointer;
+}
+.resturent-card .item :hover{
+background-color:crimson;
+}
+@media(max-width:900px){
+   .wide-card{
+       flex-direction:column;
+   }
+  .resturent-card{
+  display:grid;
+      grid-template-columns:1fr;
+      grid-gap:10px;
+  }
+  
+nav .d ul {
+display:block !important ;
+position:fixed;
+top:16px;
+left:-100%;
+width:100vw;
+height:100vh;
+justify-content:center;
+align-items:center;
+background-color:black;
+}
+  nav .d ul li{
+     margin-top:20px;
+      font-size:20px;
+      text-align:center;
+      cursor:pointer;
+  }
+ nav .d label{
+      display:block !important ;
+      font-size:30px;
+  }
+ nav input:checked~ul{
+      left:0%;
+      transition:all 0.3s ease;
+  }
+  
+  nav input:checked ~label i:before{
+      content:"×";
+     font-size:30px;
+  }
+  
+  
+}
+
+.grid4{
+   display:grid;
+   grid-template-columns:1fr 1fr 1fr 1fr;
+   justify-items:center;
+   align-items:center;
+   grid-gap:10px;
+ 
+}
+
+.noddata{
+    position: absolute;
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+}
+.footer{
+position: fixed;
+bottom:0px;
+width: 100%;
+background-color: #0a0101;
+
+color:whitesmoke
+}

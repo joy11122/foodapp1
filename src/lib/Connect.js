@@ -1,0 +1,1 @@
+export const connectstr="mongodb://localhost:27017/Joyanto"
