@@ -1,1 +1,1 @@
-export const connectstr="mongodb://localhost:27017/Joyanto"
+export const connectstr="mongodb://mongodb+srv://joyhaldar112233:E7DalwmHNE0221Sl@cluster008.n563pbv.mongodb.net/Ecom?retryWrites=true&w=majority&appName=Cluster008:27017/Joyanto"
