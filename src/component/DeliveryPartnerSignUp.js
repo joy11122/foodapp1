@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
-const user_auth = (props) => {
+const User_auth = (props) => {
  
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -135,4 +135,4 @@ router.push("/deliveryman/dashboard")
   );
 };
 
-export default user_auth;
+export default User_auth;
