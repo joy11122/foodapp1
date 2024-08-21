@@ -79,6 +79,9 @@ const Navbar = (props) => {
             <Link className="text-decoration-none" href="/">Home</Link>
           </li>
           <li>
+            <Link className="text-decoration-none" href="/deliveryman/dashboard">Dmandashboard</Link>
+          </li>
+          <li>
             <Link className="text-decoration-none" href="/restaurent">Add Restaurant</Link>
           </li>
           <li>
