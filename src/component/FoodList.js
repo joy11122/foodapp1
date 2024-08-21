@@ -11,7 +11,7 @@ const FoodList = () => {
   const getFood = async () => {
     const restoDetail=JSON.parse(localStorage.getItem("Login"))
     const recto_id=restoDetail._id
-let res=await fetch("http://localhost:3000/api/getfood/"+recto_id)
+let res=await fetch("/api/getfood/"+recto_id)
     res = await res.json();
     console.log(res);
     if (res) {
