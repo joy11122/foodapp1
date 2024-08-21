@@ -22,8 +22,8 @@ let res=await fetch("/api/getfood/"+recto_id)
 
   return (
     <div>
-      <div class="table-responsive">
-        <table class="table text-center table-bordered table-primary">
+      <div className="table-responsive">
+        <table className="table text-center table-bordered table-primary">
           <thead>
             <tr>
               <th>Image</th>
