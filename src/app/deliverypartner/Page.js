@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import DeliveryPartnerLogin from "@/component/DeliveryPartnerLogin"
 import DeliveryPartnerSignUp from "@/component/DeliveryPartnerSignUp"  
 import Link from 'next/link'
-import Navbar from '@/component/Navbar'
+
 import DeliveryNavbar from '@/component/DeliveryNavbar'
 const Page = () => {
 
