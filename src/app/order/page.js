@@ -57,7 +57,7 @@ const Page = () => {
         total_amount,
       };
 
-      const res = await fetch("http://localhost:3000/api/order", {
+      const res = await fetch("/api/order", {
         method: "POST",
         body: JSON.stringify(collection),
       });
