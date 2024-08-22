@@ -10,7 +10,7 @@ const Restaurent = (props) => {
   const router = useRouter();
  
   const GetRestaurant = async () => {
-    let url = "http://localhost:3000/api/addRestaurant";
+    let url = "/api/addRestaurant";
 
     if (name == "city") {
       url = url + "?city=" + value.toLowerCase();
