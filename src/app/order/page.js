@@ -40,7 +40,7 @@ const Page = () => {
     const user_id = storedUser._id;
 
     try {
-      let ress = await fetch(`http://localhost:3000/api/delivery/login/${city}`);
+      let ress = await fetch(`/api/delivery/login/${city}`);
       ress = await ress.json();
 
       const deliveryman_id = ress.result[Math.floor(Math.random() * ress.result.length)];
