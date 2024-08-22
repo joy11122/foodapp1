@@ -20,7 +20,7 @@ const User_auth = (props) => {
       setError(true);
       return false;
     }
-    const result = await fetch("http://localhost:3000/api/user_auth", {
+    const result = await fetch("/api/user_auth", {
       method: "post",
       body: JSON.stringify(data),
     });

@@ -8,7 +8,7 @@ const Login = (props) => {
   const [password, setPassword] = useState("");
   const router = useRouter();
   const handleLogin = async () => {
-    let res = await fetch("http://localhost:3000/api/delivery/login", {
+    let res = await fetch("/api/delivery/login", {
       method: "post",
       body: JSON.stringify({ phone, password }),
     });

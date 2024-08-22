@@ -16,7 +16,7 @@ if (password!==cpassword) {
   setError(true)
   return false;
 }
-    const result = await fetch("http://localhost:3000/api/addRestaurant",{
+    const result = await fetch("/api/addRestaurant",{
       method: "post",
       body: JSON.stringify(data),
     });

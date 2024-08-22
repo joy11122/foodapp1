@@ -31,7 +31,7 @@ return item.name.toUpperCase();
   }, []);
   const getrestoAndfood = async () => {
     let res = await fetch(
-      "http://localhost:3000/api/getrestoandfood/" + params.name
+      "/api/getrestoandfood/" + params.name
     );
     res = await res.json();
     console.log(res);
