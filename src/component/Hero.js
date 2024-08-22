@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Restaurent from "./Restaurent";
+
 const Hero = () => {
   const [city, setCity] = useState([]);
   const [name, setName] = useState("");
@@ -9,53 +10,53 @@ const Hero = () => {
   useEffect(() => {
     getCity();
   }, []);
+
   const getCity = async () => {
-    let res = await fetch("http://localhost:3000/api/restaurants");
-    res = await res.json();
-    if (res.success) {
-      var city = res.result.map((item) => {
-        return item.city;
-      });
+    try {
+      const res = await fetch("/api/restaurants"); // Use relative path
+      const data = await res.json();
+      if (data.success) {
+        const cityList = data.result.map((item) => item.city);
+        setCity(cityList);
+      }
+    } catch (error) {
+      console.error("Error fetching city data:", error);
     }
-    setCity(city);
   };
 
-  const handleCityClick = (e) => {
-    setName(e.target.name);
+  const handleCityChange = (e) => {
+    setName(e.target.value);
+  };
+
+  const handleInputChange = (e) => {
     setValue(e.target.value);
   };
 
   return (
     <div>
-      <div className="coverimg d-flex justify-content-center align-items-center flex-column  ">
+      <div className="coverimg d-flex justify-content-center align-items-center flex-column">
         <div>
-          <h2 className="fw-bold display-2 text-primary ">Food Delevery App</h2>
+          <h2 className="fw-bold display-2 text-primary">Food Delivery App</h2>
           <p className="text-center text-light">Online food Service</p>
         </div>
-        <div className="w-75 d-flex bg-light  text-dark p-3">
-          <div className="w-25 p-2 b">
+        <div className="w-75 d-flex bg-light text-dark p-3">
+          <div className="w-25 p-2">
             <select
               className="outline-0 border-0"
               name="city"
-              onClick={handleCityClick}
+              onChange={handleCityChange} // Use onChange
             >
-              {city.map((city, i) => {
-                return (
-                  <option
-                    key={i}
-                    className="outline-none border-0"
-                    onClick={handleCityClick}
-                    name="city"
-                  >
-                    {city}
-                  </option>
-                );
-              })}
+              <option value="">Select City</option> {/* Placeholder option */}
+              {city.map((city, i) => (
+                <option key={i} value={city} name="city">
+                  {city}
+                </option>
+              ))}
             </select>
           </div>
-          <div className="w-75 ">
+          <div className="w-75">
             <input
-              onChange={handleCityClick}
+              onChange={handleInputChange} // Separate handler for input
               className="outline-0 w-100 h-100 border-0"
               type="text"
               name="restaurent"
