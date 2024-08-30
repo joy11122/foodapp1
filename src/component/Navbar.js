@@ -72,7 +72,7 @@ const Navbar = (props) => {
         <Link className="fw-bold display-6 text-decoration-none" href="/">Daraz</Link>
         <input type="checkbox" id="click" className="d-none" />
         <label className="d-none" htmlFor="click">
-          <i className="bi bi-list" />
+          <i className="text-danger bi bi-list" />
         </label>
         <ul className="d-flex mt-3 gap-3 text-decoration-none">
           <li>
